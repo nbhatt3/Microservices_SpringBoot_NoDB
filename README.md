@@ -5,10 +5,10 @@ This example describes 3 microservices which interact to fetch data. Eureka Serv
 ie. all 3 microservices register themselves with Eureka Server (folder is discovery-server).
 
 Objective : Given a userId in the request url, provide the ratings for each movie given by that userId. 
-TO-use URL - http://localhost:8081/catalog/userId
+To-use URL - http://localhost:8081/catalog/userId
 
 Microservice 1 - MovieInfo Service -    configured to run on port 8082 
-Microservice 2 - MovieCatalog Service - configured to run on Port 8081
+Microservice 2 - MovieCatalog Service - configured to run on port 8081
 Microservice 3 - Ratings Data Service - configured to run on port 8083
 
 Microservice 2 calls the Microservice 3 to get all the Ratings for a userId provided in URL call from a user.
